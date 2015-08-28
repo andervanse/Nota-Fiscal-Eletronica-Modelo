@@ -1,0 +1,4 @@
+#ignore bin
+bin/
+obj/
+Fiscal.Nfe.csproj.vspscc
