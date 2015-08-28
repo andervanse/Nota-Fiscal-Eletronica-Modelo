@@ -2,3 +2,6 @@
 bin/
 obj/
 Fiscal.Nfe.csproj.vspscc
+*.vssscc
+*.suo
+Fiscal.Library/Fiscal.Nfe.Test/Fiscal.Nfe.Test.csproj.vspscc
