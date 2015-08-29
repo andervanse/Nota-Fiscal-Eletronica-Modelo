@@ -1,9 +1,9 @@
 # Nota Fiscal Eletrônica - CSharp
-Modelo classes com a estrutura da Nota fiscal eletrônica
+Conjunto de classes mapeadas conforme o manual da Nota fiscal eletrônica v4.01 disponível [aqui](http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=33ol5hhSYZk=)
 Serialização a partir de arquivo XML ou Stream
 Validação através dos schemas publicados no [site da NF-e](http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/fwLvLUSmU8=)
 
-### Como usar
+### Exemplo
         NotaFiscalEletronica notaFiscal = null;
         using (FileStream fs = new FileStream("Nfe.xml", FileMode.Open))
         {
@@ -14,7 +14,7 @@ Validação através dos schemas publicados no [site da NF-e](http://www.nfe.faz
             Debug.WriteLine(String.Format("Qtde. Itens.: {0}", notaFiscal.InfNfe.Itens.Count));            
         }
         
-### Exemplo prático
-  http://andersondavanse.com.br/Projects
+
+  Visualização de Danfe -> http://andersondavanse.com.br/Projects
   
-  http://andersondavanse.com.br/Projects/Nfe/ValidaXmlNfe
+  Validação -> http://andersondavanse.com.br/Projects/Nfe/ValidaXmlNfe
