@@ -82,6 +82,10 @@ namespace Fiscal.Nfe.Test
             using (FileStream fs = new FileStream("Nfe.xml", FileMode.Open))
             {
                 notaFiscal = nfeSerializer.DeserializeFromStream<NotaFiscalEletronica>(fs);
+                Debug.WriteLine(String.Format("Num Nfe.: {0}", notaFiscal.InfNfe.Ide.NumNf));
+                Debug.WriteLine(String.Format("Remetente.: {0}", notaFiscal.InfNfe.Emitente.Nome));
+                Debug.WriteLine(String.Format("Destinatário.: {0}", notaFiscal.InfNfe.Destinatario.Nome));
+                Debug.WriteLine(String.Format("Qtde. Itens.: {0}", notaFiscal.InfNfe.Itens.Count));
             }
 
             Assert.IsTrue(notaFiscal != null);
